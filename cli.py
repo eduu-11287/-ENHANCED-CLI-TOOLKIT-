@@ -9,6 +9,7 @@ from modules.utils import CLIColors, print_banner, print_centered, center_text
 from modules.youtube_manager import youtube_menu
 from modules.weather_manager import weather_menu
 from modules.chrome_manager import chrome_menu
+from modules.system_info_menu import system_info_menu
 
 # Load environment variables from .env file
 load_dotenv()
@@ -41,10 +42,6 @@ def main_menu():
 # Stub functions for other menus
 def file_manager_menu():
     print(f"\n{CLIColors.CYAN}📁 File Manager{CLIColors.END}")
-    print(f"{CLIColors.YELLOW}⚠️ Feature coming soon!{CLIColors.END}")
-
-def system_info_menu():
-    print(f"\n{CLIColors.CYAN}🔧 System Information{CLIColors.END}")
     print(f"{CLIColors.YELLOW}⚠️ Feature coming soon!{CLIColors.END}")
 
 def network_tools_menu():
