@@ -5,7 +5,7 @@ Enhanced CLI Tool - Multi-purpose command line interface
 
 import os
 from dotenv import load_dotenv
-from modules.utils import CLIColors, print_banner
+from modules.utils import CLIColors, print_banner, print_centered, center_text
 from modules.youtube_manager import youtube_menu
 from modules.weather_manager import weather_menu
 from modules.chrome_manager import chrome_menu
@@ -29,7 +29,7 @@ def main_menu():
         "9": "🚪 Exit"
     }
     
-    print(f"{CLIColors.YELLOW}Available Tools:{CLIColors.END}")
+    print(f"\n{CLIColors.YELLOW}Available Tools:{CLIColors.END}")
     print("=" * 60)
     
     for key, value in options.items():
