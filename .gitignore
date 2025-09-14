@@ -40,7 +40,7 @@ data/*.json        # Ignore all JSON files in data directory
 data/used_videos.json
 data/saved_playlists.json
 data/favorites.json
-
+data
 # Logs and databases
 *.log
 *.sqlite
